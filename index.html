@@ -1,0 +1,194 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<title>Shawn Turner | INFO 2439 | eDayWorker App</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, ">
+	
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	
+	
+		
+	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	
+	<link rel="stylesheet" href="eDayWorker.css" />
+	<link rel="stylesheet" href="eDayWorker.min.css" />
+
+	<!--<link rel="stylesheet" href="eDayWorker.css" />-->
+	
+</head>
+<body>
+<!-- Shawn Turner
+	 index.html
+	 INFO2439
+	 Rosas
+	 11/19/2018
+-->	
+
+
+<!--MAIN INDEX PAGE-->
+<div data-role="page" id="homepage" data-title="Shawn Turner | INFO 2439 | eDayWorker App">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"><h1>eDayWorker</h1>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="casual_main.html">Casual Invites</a></li>
+			<li><a href="door_area_main.html">Door Invites</a></li>
+			<!--<li><a href="#">Follow Up</a></li> (for later version functionality)-->
+		</ul>
+	</div><!-- Closing navbar div -->
+	</div><!-- Closing header div -->
+	<div role="main" class="ui-content">
+		<div id="greeting-content" data-role="content">
+
+			<h2>Welcome</h2>
+			<img src="images/eDayWorker-logo.png" width="100%" height="100%" alt="eDayWorker Logo"/>
+			
+			
+			
+		</div>
+	
+		<div id="menu-content" data-role="content">
+
+			<h2>Select Casual Invites</h2>
+			<p>
+				Allows you to perform contact entry when meeting contacts one on one.
+
+			</p>
+
+			<h2>Select Door Invites</h2>
+
+			<p>
+				Allows you to perform contact entry while canvassing doors 
+			</p>
+
+			<h2>Upload/Email Data</h2>
+			<p>
+				Allows you to perform a data backup (This is currently under contruction) 
+			</p>
+			
+		</div>
+
+	</div><!-- Closing main div -->
+
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="index.html" >Back to Home</a></li>
+				<li><a href="#">Upload/Email Data</a></li><!--for later version functionality-->
+			</ul>
+			<br/>
+				<img src="images/eDayWorker-logo.png" width="60" height="42" alt="eDayWorker Logo"/>
+			</div><!-- Closing navbar div -->
+	</div><!-- Closing footer div -->
+</div><!-- Closing page div -->
+
+<!--DATA-BACKUP PAGE (for later version functionality)-->
+<div data-role="page" id="data_backup" data-title="Shawn Turner | INFO 2439 | Backup">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"><h1>Backup</h1>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#">Via Email</a></li>
+			<li><a href="#">Via Sync</a></li>
+			<li><a href="#">Delete all Data</a></li>
+		</ul>
+	</div><!-- Closing navbar div -->
+	</div><!-- Closing header div -->
+	<div role="main" class="ui-content">
+		<div id="greeting-content" data-role="content">
+
+
+			
+			<br/>
+			<h2>holder text</h2>
+			
+		</div>
+	
+		<div id="menu-content" data-role="content">
+
+			<h2>holder text</h2>
+
+			<ul data-role="listview">
+				<li style="margin: 10px 0;"><a href="https://mccneb.edu/MCCNEB/media/Main-Site-Graphics/Sage-Lunch-Menu-18FA-WEB.pdf">Fall 2018 Lunch Menu</a></li>
+				
+				<li><a href="https://mccneb.edu/MCCNEB/media/Main-Site-Graphics/Static-Web-Menu-Fall-2018.pdf">Fall 2018 Dinner Menu</a></li>
+			</ul><br/>
+
+			<p>
+					holder text
+
+			</p>
+			
+		</div>
+
+	</div><!-- Closing main div -->
+
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#homepage" >Back to Home</a></li>
+				
+			</ul>
+			<br/>
+				<img src="images/eDayWorker-logo.png" width="60" height="42" alt="eDayWorker Logo"/>
+			</div><!-- Closing navbar div -->
+	</div><!-- Closing footer div -->
+</div><!-- Closing page div -->
+
+
+<!--FOLLOWUP PAGE (for later version functionality)-->
+<div data-role="page" id="followup_main" data-title="Shawn Turner | INFO 2439 | Follow Up">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"><h1>Follow Up</h1>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#followup_list">See Full List</a></li>
+			<li><a href="#">Filter by Type</a></li>
+		</ul>
+	</div><!-- Closing navbar div -->
+	</div><!-- Closing header div -->
+	<div role="main" class="ui-content">
+		<div id="greeting-content" data-role="content">
+
+
+			
+			<br/>
+			<h2>holder text</h2>
+			
+		</div>
+	
+		<div id="menu-content" data-role="content">
+
+			<h2>holder text</h2>
+
+			<ul data-role="listview">
+				<li style="margin: 10px 0;"><a href="https://mccneb.edu/MCCNEB/media/Main-Site-Graphics/Sage-Lunch-Menu-18FA-WEB.pdf">Fall 2018 Lunch Menu</a></li>
+				
+				<li><a href="https://mccneb.edu/MCCNEB/media/Main-Site-Graphics/Static-Web-Menu-Fall-2018.pdf">Fall 2018 Dinner Menu</a></li>
+			</ul><br/>
+
+			<p>
+					holder text
+
+			</p>
+			
+		</div>
+
+	</div><!-- Closing main div -->
+
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="#homepage" >Back to Home</a></li>
+				
+			</ul>
+			<br/>
+				<img src="images/eDayWorker-logo.png" width="60" height="42" alt="eDayWorker Logo"/>
+			</div><!-- Closing navbar div -->
+	</div><!-- Closing footer div -->
+</div><!-- Closing page div -->
+
+
+</body>
+</html>

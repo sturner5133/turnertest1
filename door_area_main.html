@@ -1,0 +1,145 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<title>Shawn Turner | INFO 2439 | Door Area Menu </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, ">
+	
+	
+	<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="doorContact.js"></script>
+	<script type="text/javascript" src="cordova.js"></script>
+		
+	<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="eDayWorker.min.css" />
+	<link rel="stylesheet" href="eDayWorker.css" />
+	
+</head>
+<body>
+<!-- Shawn Turner
+	 door_area_main.html
+	 INFO2439
+	 Rosas
+	 11/19/2018
+-->	
+
+
+
+<div data-role="page" id="new_door" data-title="Shawn Turner | INFO 2439 | Door Area Menu ">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"><h1>Door Menu</h1>
+	<div data-role="navbar">
+		<ul>
+			
+			<li><a href="door_area_list.html">View Door List</a></li>
+			
+		</ul>
+	</div><!-- Closing navbar div -->
+	</div><!-- Closing header div -->
+	<div role="main" class="ui-content">
+			<button onclick="location.reload();">Click to Refresh Form First</button>
+		<form>
+			<div class="ui-field-contain">
+				<input id="title" type="text" placeholder="address" />
+			</div>
+			<div class="ui-field-contain">
+				<input id="fname" type="text" placeholder="first name" />
+			</div>
+			<div class="ui-field-contain">
+				<input id="lname" type="text" placeholder="last name" />
+			</div>
+			<div class="ui-field-contain">
+					<input id="phone" type="text" placeholder="phone" />
+				</div>
+			<div class="ui-field-contain">
+				<input id="city" type="text" placeholder="city" />
+			</div>
+			<div class="ui-field-contain">
+				<input id="state" type="text" placeholder="state" />
+			</div>
+			<div class="ui-field-contain">
+					<input id="zip" type="text" placeholder="zip" />
+				</div>
+				<div class="ui-field-contain">
+						<input id="area" type="text" placeholder="area" />
+				</div>
+			<div class="ui-field-contain">
+					<!--<input id="response" type="text" placeholder="response" />-->
+					<label for="response">Contact Response:</label>
+					<select id="response" data-native-menu="false">
+					<option value="POSITIVE">POSITIVE</option>
+					<option value="NOT HOME">NOT HOME</option>
+					<option value="DEFINITE">DEFINITE</option>
+					<option value="NEGATIVE">NEGATIVE</option>
+			</select>
+
+			</div>
+			<div class="ui-field-contain">
+				<label for="note">Contact Notes:</label>
+				<textarea id="note" placeholder="Note Content">
+				</textarea>
+			</div>
+			<div class="ui-grid-a">
+				<div class="ui-block-a">
+					<input id="btnDiscard" type="submit" value="Discard" />
+				</div>
+				<div class="ui-block-b">
+					<input id="btnAddContact" type="button" value="Add Contact" />
+				</div>
+			</div>
+        </form>
+        
+	</div><!-- Closing main div -->
+
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="index.html" >Back to Home</a></li>
+				<li><a href="door_area_list.html">View Door List</a></li>
+				
+			</ul>
+			<br/>
+				<img src="images/eDayWorker-logo.png" width="60" height="42" alt="eDayWorker Logo"/>
+			</div><!-- Closing navbar div -->
+	</div><!-- Closing footer div -->
+</div><!-- Closing page div -->
+
+
+<!--TEST PAGE (not used)-->
+<div data-role="page" id="door_view" data-title="Shawn Turner | INFO 2439 | Door View">
+	<div data-role="header" data-add-back-btn="true" data-position="fixed"><h1>Door View</h1>
+	<div data-role="navbar">
+		<ul>
+			<li><a href="#new_door">New Door</a></li>
+						
+		</ul>
+	</div><!-- Closing navbar div -->
+	</div><!-- Closing header div -->
+	<div role="main" class="ui-content">
+		       
+        <form>
+                <input type="text" id="myFilter" placeholder="Type to filter.">
+        </form>
+
+		<ul id="notesList" data-role="listview" data-inset="true" data-filter="true" data-input="#myFilter"></ul>
+	
+	</div><!-- Closing main div -->
+
+	<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+			<ul>
+				<li><a href="index.html" >Back to Home</a></li>
+				<li><a href="#new_door">New Door</a></li>
+				
+			</ul>
+			<br/>
+				<img src="images/eDayWorker-logo.png" width="60" height="42" alt="eDayWorker Logo"/>
+			</div><!-- Closing navbar div -->
+	</div><!-- Closing footer div -->
+</div><!-- Closing page div -->
+
+
+
+</body>
+</html>

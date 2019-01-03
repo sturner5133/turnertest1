@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.turner.eDayWorker"
+    versionCode = "1"
+    version     = "1.0.0" >
+
+<!-- versionCode is optional and Android only -->
+
+  <name>eDayWorker</name>
+
+  <description>
+      Church Canvassing App
+  </description>
+
+  <author href="https://build.phonegap.com" email="mailto:sturner5133@gmail.com">
+      Shawn Turner
+  </author>
+
+  <icon src="icon.png" />
+
+  <plugin name="cordova-plugin-battery-status" spec="~2.0.2" />
+  <plugin name="cordova-plugin-inappbrowser" spec="~3.0.0" />
+  <plugin name="cordova-plugin-network-information" spec="~2.0.1" />
+  <plugin name="cordova-plugin-statusbar" spec="~2.4.2" />
+  <plugin name="cordova-plugin-geolocation" spec="~4.0.1" />
+  <plugin name="cordova-plugin-contacts" spec="~3.0.1" />
+  <plugin name="cordova-plugin-dialogs" spec="~2.0.1" />
+  <plugin name="cordova-plugin-whitelist" />
+    <!-- Allow links to web pages to open in a browser -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <!-- Allow SMS links to open messaging app -->
+    <allow-intent href="sms:*" />
+
+    <!-- Allow tel: links to open the dialer -->
+    <allow-intent href="tel:*" />
+
+    <!-- Allow geo: links to open maps -->
+    <allow-intent href="geo:*" />
+
+</widget>
